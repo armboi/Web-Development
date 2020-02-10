@@ -1,0 +1,124 @@
+    *{
+      padding: 0px;
+      margin: 0px;
+      font-family:sans-serif;
+    }
+
+    .hero{
+      background-color: #08AEEA;
+      background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 58%);
+    }
+
+    .top-bar{
+      padding: 20px;
+      color: #fff;
+      font-weight: bold;
+      font-style: italic;
+      padding-left: 50px;
+    }
+
+    .top-button{
+      float: right;
+    }
+
+    .top-button a{
+      margin: 0 8px;
+      padding: 8px 20px;
+      border-radius:50px;
+      background:#fff;
+      color:#333;
+      text-decoration: none !important; 
+      border: 2px solid #fff;
+    }
+
+    .login-btn{
+      background: transparent !important;
+      color: #fff !important;
+    }
+
+    .top-button a:hover{
+      background: #fff !important;
+      color: #333 !important;
+    }
+
+    .hero h1{
+      color: #fff;
+      font-size: 70px;
+      font-weight: bold;
+      margin-top: 12%;
+      letter-spacing: 3px;
+    }
+
+    .hero p{
+      color: #fff;
+    }
+
+    .hero .container{
+      margin-top: 9%;
+    }
+
+    .start-btn{
+      background: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+      width: 140px;
+      height: 40px;
+      margin-top: 30px;
+      border-radius: 50px;
+    }
+
+    .start-btn button:hover{
+      background: #fff !important;
+      color: #333 !important;
+    }
+
+    .home-img img{
+      width:85%;
+      min-width: 350px;
+      margin-top: -15px;
+    }
+
+    .places{
+      padding: 30px 0px;
+      background: #efefef;
+    }
+
+    .places h1{
+      margin: 60px 0px;
+      color: #555;
+    }
+
+    .monument-img{
+      height: 250px;
+    }
+
+    .monument-img img{
+      width: 100%;
+      height: 100%;
+    }
+
+    .monument-details{
+      background: #fff;
+      padding: 10px 0 1px;
+      margin-bottom:15px; 
+    }
+
+    .footer{
+      background-color: #08AEEA;
+      background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 58%);
+    }
+
+    .footer-menu a{
+      display: inline-block;
+      width: 120px;
+      color:#fff !important;
+      text-decoration: none !important;
+      margin-bottom: 20px;
+      margin-top: 30px;
+    }
+
+    .footer p{
+      color:#fff;
+      font-size: 14px;
+      margin-top: 20px;
+    }
