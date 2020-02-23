@@ -12,3 +12,14 @@
 	text-align: center; 
 	margin:0px 20px;
 }
+#image{
+	width: 100%;
+	height: auto;
+}
+#tribute-info{
+	text-align: center;
+}
+#display-text{
+	font-size: 20px;
+	text-align: center;
+}
