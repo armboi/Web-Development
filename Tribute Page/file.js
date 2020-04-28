@@ -1,0 +1,5 @@
+getWhe(){
+  WheelEvent.getWhe(){
+    
+  }
+}
