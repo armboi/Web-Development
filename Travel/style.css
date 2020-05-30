@@ -1,12 +1,29 @@
-    *{
-      padding: 0px;
-      margin: 0px;
-      font-family:sans-serif;
-    }
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+
+body{
+  background-color:  whitesmoke;
+}
 
     .hero{
       background-color: #08AEEA;
-      background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 58%);
+      background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 58%),url(images/taj-back.jpg);
+      /* background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/taj-back.jpg); */
+
+      height: auto;
+      margin-bottom: 30px;
+/*       
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/taj-back.jpg);
+      opacity: 1;
+      background-position: center;
+      background-size: cover;
+      position: absolute; */
     }
 
     .top-bar{
@@ -54,7 +71,8 @@
     }
 
     .hero .container{
-      margin-top: 9%;
+      height: auto;
+      /* margin-top: 9%; */
     }
 
     .start-btn{
@@ -74,7 +92,7 @@
 
     .home-img img{
       width:85%;
-      min-width: 350px;
+      min-width: 450px;
       margin-top: -15px;
     }
 
@@ -121,4 +139,49 @@
       color:#fff;
       font-size: 14px;
       margin-top: 20px;
+    }
+
+    .about-sec h2{
+      background-color:whitesmoke;
+      padding: 2% ;
+      font-size: 40px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .about-sec .about-sec-con{
+      background-color:whitesmoke;
+      display: flex;
+      justify-content: space-around;
+      padding: 2% 8%;
+      font-size: 21px;
+
+
+      font-family: 'Source Sans Pro', sans-serif;
+
+
+    }
+
+    .hero-1{
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/logback.jpg);
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+    }
+    .form-box-1{
+      height: 380px;
+      width: 480px;
+      position: relative;
+      margin: 6% auto;
+      background: #fff;
+      padding: 5px;
+    }
+    
+    .button-box-1{
+      width: 220px;
+      margin: 35px auto;
+      position: relative;
+      box-shadow: 0 0 20px 9px #ff61241f;
+      border-radius: 30px;
     }

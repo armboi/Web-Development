@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manoj Prog-10</title>
+  <style>
+    label {
+        width:180px;
+        clear:left;
+        text-align:right;
+        padding-right:10px;
+    font-family:Elephant;
+    }
+    
+    input, label,select {
+        float:left;
+    }
+    </style>
+    </head>
+    <body style="background-color:#ddcae6">
+    <h1 style="text-align:center;font-family:algerian"><u>Registration </u></h1>
+    <form>
+    <br>
+    <br>
+    <label for="first">First Name </label> 
+    <input type="textbox" name="first" required><br> <br> <br>
+    <label for="last">Last Name </label> 
+    <input type="textbox" name="last" required> <br> <br> <br>
+    <label for="dob">DOB </label>
+    <input type="date" name="dob" required> <br> <br> <br>
+    <label for="gender">Gender </label>
+    <select>
+    <option value="male"> Male </option> 
+    <option value="female"> Female </option>
+    <option value="others"> Others </option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <label for="mobile">Enter Mobile No. </label>
+    <input type="textbox" name="mobile" required> <br> <br> <br>
+    <label for="mail">Enter Email </label>
+    <input type="textbox" name="mail" required> <br> <br> <br>
+    <label for="passwd">Type Password</label>
+    <input type="password" name="passwd" required> <br> <br> <br>
+    <label for="re_passwd">Re-type Password </label>
+    <input type="password" name="re_passwd" required> <br> <br> <br>
+    <label for="course">Select Course </label>
+    <select>
+    <option value="Ml"> Introduction to Machine Learning </option> 
+    <option value="Python"> Programming in Python</option>
+    <option value="Swift"> Swift Programming </option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <label for="pic">Upload Picture </label>
+    <input type="file" name="pic">
+    <br>
+    <br>
+    <div align="center">
+    <button>Submit </button>
+    </div>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manoj Prog-22</title>
+  <script>
+    function fact(){
+        var num = Number(document.getElementById('userNum').value);
+        var i , fact = 1;
+        for (i = 1 ; i<=num ; i++){
+            fact = fact * i;
+        }
+        document.getElementById('result').innerHTML = fact;
+    }
+  </script>
+</head>
+<body>
+  <input type="text" id="userNum">
+  <input type="submit" onclick="fact()"><br><br>
+  <b id="result"></b>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manoj Prog-8</title>
+  <style>
+    input{
+        color:grey;
+        border:1px solid darkgrey;
+        height:35px;
+        font-size:14px;
+    }
+    table{
+        padding:5px;
+        margin:5px;
+    }
+    .divMargin{
+        padding:15px;
+        border:2px solid black;
+    }
+    b{
+        padding-right:5px;
+    }
+    .tableClass{
+        float:left;
+        padding-right:100px;
+    }
+    button{
+        font-size:20px;
+        padding:8px;
+        float:center;
+    }
+   
+</style>
+</head>
+<body>
+<h1 align="center">ADMISSION FORM</h1>
+<div class="table1">
+<table border="0px" class="tableClass">
+
+
+    <tr>
+        <td>
+            <div class="divMargin">
+            <form>
+                <font style="float:center; font-size:14px; ">
+                    <h2>PERSONAL DETAILS</h2>
+                <b>FIRSTNAME : </b>
+                <input type="text" value="Enter your firstname"><br><br>
+                <b>LASTNAME : </b>
+                <input type="text" value="Enter your lastname"><br><br>
+                
+                <b>GENDER : </b>
+                <input type="radio" name="gender">Female&emsp;
+                <input type="radio" name="gender">Male&emsp;
+                <input type="radio" name="gender">Others&emsp;<br><br>
+         
+                <b>DATE OF BIRTH : </b>
+                <input type="date" value="Choose your dob"><br><br>
+                    
+                <b>AGE : </b>
+                <input type="number"><br><br>
+                    
+                    <b>BLOOD GROUP : </b>
+                <input type="text" value="Enter you blood group"><br><br>
+                         
+                    <b>HEIGHT : (in ms)</b>
+                <input type="number" value="Enter your height in metres"><br><br>
+                    
+                <b>WEIGHT : (in kgs)</b>
+                <input type="number" value="Enter your wieght in kilograms"><br><br>
+                    
+                    <button onclick="dataSubmit()">SUBMIT</button>
+
+                </font>
+
+            </form> 
+            </div>
+</table>
+    </div>
+    <div class="table2">
+    <table border="0px" class="tableClass">
+        <tr>
+            <td>
+            <div class="divMargin">
+            <form>
+                <font style="float:center; font-size:14px; ">
+                    <h2>OTHER DETAILS</h2>
+                <b>FATHER'S NAME : </b>
+                <input type="text" ><br><br>
+                <b>MOTHER'S NAME : </b>
+                <input type="text" ><br><br>
+            
+                <b>FATHER'S OCCUPATION : </b>
+                <input type="text" ><br><br>
+                    
+                <b>FATHER'S OCCUPATION : </b>
+                <input type="text"><br><br>
+                    
+                <b>AVERAGE FAMILY INCOME: </b>
+                <input type="number" ><br><br>
+                                   
+                <b>ADDRESS:</b>
+                <textarea></textarea><br><br>
+                
+                <b>PREVIOUS INSTITUTION'S NAME : </b>
+                <input type="text"><br><br>
+                
+                    <button onclick="dataSubmit()">SUBMIT</button>
+                
+                </font>
+
+            </form> 
+            </div>
+        </td>
+    </tr>
+</table>
+    </div>
+    
+    <div class="table2=3">
+    <table border="0px">
+        <tr>
+            <td>
+            <div class="divMargin">
+            <form>
+                <font style="float:center; font-size:14px; ">
+                    <h2>CONTACT DETAILS</h2>
+                <b>FATHER'S MOBILE NUMBER : </b>
+                <input type="text" ><br><br>
+                    
+                <b>MOTHER'S MOBILE NUMBER : </b>
+                <input type="text" ><br><br>
+            
+                <b>EMAIL ID : </b>
+                <input type="email" ><br><br>
+                    
+                    <button onclick="dataSubmit()">SUBMIT</button>
+                </font>
+            </form> 
+            </div>
+        </td>
+    </tr>
+</table>
+    </div>
+</body>
+</html>

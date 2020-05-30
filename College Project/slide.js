@@ -1,4 +1,4 @@
-var i=0;
+    var i=0;
     var img = [];
     var time = 2000;
   

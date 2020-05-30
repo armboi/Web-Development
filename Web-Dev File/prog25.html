@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manoj Prog-25</title>
+</head>
+<body>
+  <script>
+    function randomNum(){
+      var n1 , n2 , n3;
+      n1 = Math.floor((Math.random()*6)+1);
+      n2 = Math.floor((Math.random()*6)+1);
+      n3 = Math.floor((Math.random()*6)+1);
+      document.getElementById('number1').value = n1;
+      document.getElementById('number2').value = n2;
+      document.getElementById('number3').value = n3;
+      if((n1 == n2)&&(n2 == n3)){
+        document.getElementById('result').innerHTML = "WINNER";
+      }else if((n1==n2)||(n2==n3)||(n1==n3)){
+        document.getElementById('result').innerHTML = "BETTER LUCK NEXT TIME";
+      }else{
+        document.getElementById('result').innerHTML = "TRY AGAIN";
+      }
+    }
+  </script>
+  <input type="button" onclick="randomNum()" value="GENERATE   NUMBERS"><br><br>
+  <b>NUMBER 1 : </b>
+  <input type="text" id="number1"><br><br>
+  <b>NUMBER 2 : </b>
+  <input type="text" id="number2"><br><br>
+  <b>NUMBER 3 : </b>
+  <input type="text" id="number3"><br><br>
+  <b>RESULT : </b>
+  <p id="result"></p>
+</body>
+</html>

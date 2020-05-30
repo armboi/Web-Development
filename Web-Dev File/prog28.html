@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manoj Prog-28</title>
+</head>
+<body>
+  <script>
+    var n = window.prompt("Enter a natural number");
+    var i,j,l,f=-1;
+    var a=n;
+    var k;
+    for(i=0;i<n;i++)
+    {
+     for(j=0;j<a;j++)
+      {
+       document.write(j+1);
+      }
+     if(i>0)
+    {
+    f+=2;
+    for(k=0;k<f;k++)
+      {  
+       document.write("&nbsp "); 
+      }
+    }
+     for(l=j;l>0;l--)
+    {
+    if(l!=n)
+    {
+    document.write(l);}
+      }
+     document.write("<br>");
+    a--;
+    }
+    </script>
+</body>
+</html>

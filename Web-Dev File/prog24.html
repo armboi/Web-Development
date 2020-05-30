@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manoj Prog-24</title>
+  <style>
+    .redC{
+        background-color: red;
+        border-radius: 25px;
+    }
+  </style>
+  <script>
+    function fn(){
+        var num1 = Number(document.getElementById('input1').value);
+        var num2 = Number(document.getElementById('input2').value);
+        if(num1 % 2 == 0){
+            document.getElementById('evenNo').value = num1;
+            
+        }
+        else{
+            document.getElementById('oddNo').value = num1;                    
+
+        }
+        if(num2 % 2 == 0){
+            document.getElementById('evenNo').value = num2;                    
+
+        }
+        else{
+            document.getElementById('oddNo').value = num2;                 
+        }
+    }
+    function changeColor(){
+       document.getElementById('oddNo').className = "redC";
+        document.getElementById('evenNo').className = "redC";
+
+    }
+  </script>
+</head>
+<body>
+  <input type="number" id="input1"><br><br>
+  <input type="number" id="input2"><br><br>
+  <input type="submit" onclick="fn()"><br><br>
+  <input type="submit" onclick="changeColor()"><br><br>
+  <h2>ODD NUMBER : </h2>
+  <input type="text" id="oddNo">
+  
+  <h2>EVEN NUMBER : </h2>
+  <input type="text" id="evenNo">
+</body>
+</html>

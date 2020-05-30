@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manoj Prog-21</title>
+  <script>
+    function strPal(){
+        var str = document.getElementById('userStr').value;
+        var isPal = true , a;
+        for(a = 0,b = str.length-1;a<=b;a++,b--){
+            if(str[a]!=str[b]){
+                isPal=false;
+            }
+        }
+        if(isPal){
+            document.getElementById('result1').innerHTML = "STRING IS PALLINDROME";
+        }
+        else{
+             document.getElementById('result1').innerHTML = "STRING IS NOT PALLINDROME";
+        }
+    }
+    function numPal(){
+      var num = Number(document.getElementById('userNum').value);
+      var rem , n , rev=0;
+      n = num;
+      while(n>0){
+          rem = n % 10;
+          rev = rev*10 + rem;
+          n = parseInt(n/10);
+      }if(num == rev){
+          document.getElementById('result2').innerHTML = "NUMBER ISPALLINDROME";
+      }else{
+           document.getElementById('result2').innerHTML = "NUMBERIS NOT PALLINDROME";
+      }
+    }
+  </script>
+</head>
+<body>
+  <b>ENTER A STRING : </b>
+  <input type="text" id="userStr"> &nbsp;&nbsp;<input type="submit" onclick="strPal()"><br><br>
+
+  <b>ENTER A NUM : </b>
+  <input type="text" id="userNum">&nbsp;&nbsp;<input type="submit" onclick="numPal()"><br><br>
+
+  <b id="result1"></b><br><br>
+  <b id="result2"></b>
+</body>
+</html>

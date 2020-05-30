@@ -1,9 +1,13 @@
 <html>
 <head>
-  <title></title>
+  <title>Manoj Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> 
+  
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
   <script>
     var i=0;
     var img = [];
@@ -12,7 +16,7 @@
     img[0]='images/india.png';
     img[1]='images/gate1.png';
     img[2]='images/india.png';
-    img[3]='images/taj1.png';
+    // img[3]='images/taj1.png';
   
     function changeImg(){
       document.slide.src=img[i];
@@ -29,31 +33,48 @@
 </head>
 <body>
   
+
+  <!-- Main Banner Image -->
   <section class="hero">
     <div class="top-bar">
       <img src="images/logo.png" height="18%" width="20%">
       <div class="top-button">
-        <a href="#" class="login-btn">Login</a>
-        <a href="#" class="login-btn">Sign Up</a>
+        <a href="login.html" class="login-btn">Login</a>
+        <!-- <a href="#" class="login-btn">Sign Up</a> -->
       </div>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h1>Incredible India</h1>
-          <p style="font-size: 24px;">Come explore the calmness and culture.</p>
-          <button type="button" class="start-btn" >Start Now</button>
+          <h1 style="color: rgb(220, 153, 0);font-family: 'Poppins', sans-serif;">Incredible India</h1>
+          <p style="font-size: 24px; color:black;font-family: 'Poppins', sans-serif;">Come explore the calmness and culture.</p>
+          <a href="#xyz"><button type="button" class="start-btn">Start Now</button></a>
         </div>
         <div class="col-md-6">
           <div class="home-img">
-            <img name="slide" width="800" height="455">
+            <img name="slide" width="1000" height="455">
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!--This is the about section-->
+  <div id="xyz" class="about-sec text-center">
+    <h2>About Us</h2>
+    <div class="about-sec-con">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, ab at velit veritatis quisquam reiciendis magni, quia commodi illum quo fuga asperiores facere itaque maiores! Explicabo quos unde dolorum eum!
+      Voluptatem adipisci eius temporibus, nisi accusamus eum repudiandae ratione tenetur ab. Nesciunt nostrum consequuntur veritatis, dolores amet explicabo quam quasi molestias, placeat deserunt repellendus. Quod aliquid numquam impedit ab id!
+      Molestiae facilis sint dolorum soluta doloribus necessitatibus accusamus minima tempore excepturi beatae quos quas suscipit vero magnam aperiam praesentium reiciendis ad eveniet, nobis voluptates voluptatem cum eius! Officia, obcaecati natus?
+      Aliquam ut rem sunt impedit officia voluptate molestiae fuga unde omnis quam facere, inventore fugiat assumenda aspernatur expedita facilis excepturi distinctio non hic at quaerat? Eligendi voluptatum autem quia ullam?
+      Ea earum voluptatem quis impedit beatae dolorum laboriosam, mollitia inventore repellendus aperiam at sit dolor, commodi, quam obcaecati sequi labore ad maiores blanditiis incidunt ut architecto laborum! Corporis, eius mollitia!
+      
+    </div>
+  </div>
+
+  <!--Image Gallery-->
   <section class="places text-center">
-    <h1>Places to Visit</h1>
+    <h1 style="font-family: 'Poppins', sans-serif;">Places to Visit</h1>
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -113,6 +134,9 @@
       </div>
     </div>
   </section>
+  
+
+  <!-- Footer -->
   <section class="footer text-center">
     <div class="footer-menu">
       <a href="#">Home</a>
@@ -123,5 +147,6 @@
     </div>
     <p>Welcome with &#10084; by Indian Tourism.</p>
   </section>
+
 </body>
 </html>

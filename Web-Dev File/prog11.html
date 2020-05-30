@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manoj Prog-11</title>
+  <style>
+    *{
+    text-align:center;
+    }
+    h1{
+      padding-bottom: 80px;
+    }
+    input{
+      margin-bottom: 10px;
+    }
+  </style>
+  <script>
+    function change() {
+      var l = document.getElementById("abc").value;
+      document.body.style.background = l;
+    }
+  </script>
+</head>
+<body>
+  <h1>Change the Background</h1>
+  <p>Enter Color</p> 
+  <input type="text" id="abc">
+  <button onclick="change()">Change</button>
+  </body>
+</html>

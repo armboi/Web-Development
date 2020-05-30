@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manoj Prog-23</title>
+  <style>
+    .odd{
+        background-color:white;
+    }
+    .even{
+        background-color:grey;
+    }
+  </style>
+  <script>
+    var i;
+    function alternate(id){
+      if(document.getElementsByTagName){
+        var table = document.getElementById(id);
+        var rows = table.getElementsByTagName("td");
+        for(i=0;i<rows.length;i++){
+          if(i%2 == 0){
+            rows[i].className = "even";
+          }else{
+            rows[i].className = "od
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body onload="alternate('theTable')">
+  <table border="2px" id="theTable">
+    <tr>
+        <td>ROW 1</td>
+    </tr>
+    <tr>
+        <td>ROW 2</td>
+    </tr>
+    <tr>
+        <td>ROW 3</td>
+    </tr>
+    <tr>
+        <td>ROW 4</td>
+    </tr>
+    <tr>
+        <td>ROW 5</td>
+    </tr>
+    <tr>
+        <td>ROW 6</td>
+    </tr>
+    <tr>
+        <td>ROW 7</td>
+    </tr>
+    <tr>
+        <td>ROW 8</td>
+    </tr>
+    <tr>
+        <td>ROW 9</td>
+    </tr>
+    <tr>
+        <td>ROW 10</td>
+    </tr>
+  </table>
+
+</body>
+</html>

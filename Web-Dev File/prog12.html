@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manoj Prog-12</title>
+</head>
+<body>
+  <h1 style="text-align:center;">Convert temperatures to and from celsius, fahrenheit !!!</h1>
+  
+  <form>
+  
+  <input type="number" id="Csef" placeholder="C To F"/>
+  
+  <input type="number" id="FseC" placeholder="F To C"/>
+  
+  <button type="button" onclick="cToF()"> C To F ...</button>
+  <button type="button" onclick="fToc()"> F To C ...</button>
+  
+  </form>
+  
+  <script>
+  
+  function cToF() {
+  var cTemp = document.getElementById("Csef").value;
+  var cToFahr = cTemp * 9 / 5 + 32;
+  var massage = cTemp + '°C is ' + cToFahr + '°F.';
+  document.getElementById("demo").innerHTML = massage;
+  }
+  
+  function fToc() {
+  var ftemp = document.getElementById("FseC").value;
+  var fToC = (ftemp-32)*5/9;
+  var message = ftemp + '°F is ' + fToC +'°F.';
+  document.getElementById("demo").innerHTML = message;
+  }
+  
+  </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manoj Prog-20</title>
+  <script>
+    function fibon()
+    {
+    var n=parseInt(document.getElementById("a").value);
+    var t1=0,t2=1;
+    var i=t1+t2;
+    var nxt=(t1 + "," + t2);
+    while(i<n)
+    {
+    nxt+=("," + i);
+    t1=t2;
+    t2=i;
+    i=t1+t2;
+    }
+    document.getElementById("p1").innerHTML="Fibonacci Series-" + nxt;
+    }
+    </script>
+    </head>
+    <body>
+    <h2>Fibonacci Series Program</h2>
+    <br>
+    <label>Enter number </label> &nbsp &nbsp &nbsp
+    <input type="textbox" id="a">
+    <br>
+    <br>
+    <button onclick="fibon()">Print </button>
+    <br>
+    <p id="p1"> </p>
+    </body>
+</html>
